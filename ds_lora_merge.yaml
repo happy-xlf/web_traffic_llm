@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /mnt/tidal-nj01/dataset/xlf/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+adapter_name_or_path: /mnt/tidal-nj01/dataset/xlf/web_traffic_llm/ds7b_lora/7b_forecast_abnormal_epoch5/checkpoint-1400
+template: deepseek3
+finetuning_type: lora
+
+### export
+export_dir: /mnt/tidal-nj01/dataset/xlf/web_traffic_llm/export_model/web_LLM_cpt1400
+export_size: 2
+export_device: cpu
+export_legacy_format: false
